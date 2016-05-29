@@ -1,0 +1,14 @@
+*.dll
+*.pdb
+*.exe
+
+DLLs/*
+conda-meta/*
+Doc/*
+include/*
+Lib/*
+Library/*
+libs/*
+Scripts/*
+tcl/*
+Tools/*
