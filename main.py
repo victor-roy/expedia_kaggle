@@ -14,6 +14,8 @@ os.chdir(os.getcwd())
 
 
 def main():
+    # importData needs to only be run once. 
+    # TODO: add check to see if importData has been run, retrieve chunk_count
     chunk_count, row_count = importData()
     
     print "chunk_count = {0}".format(chunk_count)

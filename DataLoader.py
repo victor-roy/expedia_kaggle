@@ -75,3 +75,11 @@ def loadChunk(chunk_num):
     f.close()
     
     return train
+    
+def saveChunk(chunk, chunk_num):
+    file_name = 'train_chunk_'+str(chunk_num)+".pickle"
+    f = open(file_name, 'wb')
+    pickle.dump(chunk, file_name)
+    f.close()
+    
+    return
