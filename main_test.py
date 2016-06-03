@@ -82,7 +82,7 @@ def main():
     
     train = featureEngineering(train)
 
-    most_popular = calcPopular(train)     
+    #most_popular = calcPopular(train)     
     
     
     
