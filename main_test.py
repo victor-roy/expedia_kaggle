@@ -85,7 +85,7 @@ def featureEngineering(train):
 
     # True for winter/summer; False for autumn/spring    
     # Winter/Summer counts as [1,2,12,11,6,7,8,9], where 1 = Jan; 12 = Dec
-    train['season'] = train['srch_ci_month'].map(lambda x: x in [1,2,12,11,6,7,8,9])
+    train['season'] = train['srch_ci_month'].map(lambda x: x in [1,2,12,11,6,7,8])
     
     
     return train
