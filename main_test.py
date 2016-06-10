@@ -81,6 +81,7 @@ def featureEngineering(train):
 
     # Month in which search-check-in day resides; 0 for January, 11 for December
     train['srch_ci_month'] = pd.to_datetime(train['srch_ci'], errors='coerce').dt.month
+    train['serch_ci_month'] = train['srch_ci_month'].astype('category', ordered = False)
 
     # True for winter/summer; False for autumn/spring    
     # Winter/Summer counts as [0,1,11,10,5,6,7,8], where 0 = Jan; 11 = Dec
